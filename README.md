@@ -1,4 +1,4 @@
-#Проект "Поиск городов"
+# Проект "Поиск городов"
 
 В проекте используется TypeScript.
 В качестве препроцессора CSS используется SASS.
@@ -18,7 +18,7 @@ https://geotree.ru/API-search
 Версия React Table v8 (TanStack Table )
 https://tanstack.com/table/v8
 
-###Найденные баги
+### Найденные баги
 
 API:
 
