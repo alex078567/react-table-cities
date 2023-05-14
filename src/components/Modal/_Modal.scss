@@ -1,0 +1,39 @@
+.modal-container {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.702);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.modal-container__modal {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+		background: #fff;
+		width: 80vw;
+		max-width: 40rem;
+		border-radius: 1.6rem;
+		padding: 3.6rem 1.6rem;
+		text-align: center;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 1.8rem;
+	}
+	&__button {
+		height: 4rem;
+		border-radius: 10rem;
+		border: none;
+		font-size: 1.6rem;
+		transition: all 0.3s;
+	}
+	&__button:hover {
+		background-color: #c0c0c0;
+	}
+}
