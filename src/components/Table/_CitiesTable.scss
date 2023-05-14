@@ -1,0 +1,73 @@
+.table-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 10rem;
+	&__header {
+		margin-bottom: 2rem;
+	}
+}
+
+.cities-table {
+	border: 1px solid #000;
+	background-color: #eeeeee;
+	width: 80%;
+	text-align: left;
+	border-collapse: collapse;
+
+	& input {
+		height: 3rem;
+		border-radius: 5px;
+		border-width: 1px;
+		padding: 0.5rem 0.8rem;
+		line-height: 1;
+	}
+	& td,
+	& th {
+		border: 1px solid #aaaaaa;
+		padding: 0.3rem 0.2rem;
+	}
+	& tbody td {
+		font-size: 1.4rem;
+	}
+	// & tr:nth-child(even) {
+	// 	background: #74d074;
+	// }
+
+	& tbody tr:hover {
+		background: red;
+		opacity: 0.6;
+		cursor: pointer;
+		color: #fff;
+	}
+
+	& thead th {
+		font-size: 15px;
+		font-weight: bold;
+		color: #ffffff;
+		border-left: 1px solid #000;
+	}
+	& thead th div:first-child {
+		display: flex;
+		align-items: center;
+		gap: 0.2rem;
+	}
+	& thead {
+		background: #1c6ea4;
+
+		background: linear-gradient(
+			to bottom,
+			#5592bb 0%,
+			#327cad 66%,
+			#1c6ea4 100%
+		);
+		border: 1px solid #000;
+	}
+	& thead th:first-child {
+		border-left: none;
+	}
+
+	&__arrow-icon {
+		stroke-width: 100;
+	}
+}
