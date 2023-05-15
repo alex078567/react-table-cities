@@ -58,7 +58,7 @@ const CitiesTable = () => {
 		if (citiesListForTable.length < 1) {
 			dispatch(setShowTable(false));
 		}
-	}, [citiesListForTable]);
+	}, [citiesListForTable, dispatch]);
 
 	const handleClick = (id: string) => {
 		dispatch(setShowModal(+id));
