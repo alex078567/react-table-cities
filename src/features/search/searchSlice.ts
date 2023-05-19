@@ -73,7 +73,7 @@ const searchSlice = createSlice({
 						cityType: name_type_full,
 						cityName: name_display,
 						cityNameWithoutType: name_without_type,
-						cityPopulation: +population,
+						cityPopulation: population,
 						cityRegion: description,
 					};
 					return cityDataObject;
