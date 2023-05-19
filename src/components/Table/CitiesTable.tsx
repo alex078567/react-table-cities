@@ -21,7 +21,7 @@ import Modal from '../Modal/Modal';
 
 type City = {
 	cityNameWithoutType: string;
-	cityPopulation: number;
+	cityPopulation: string;
 	cityRegion: string;
 };
 
@@ -115,7 +115,9 @@ const CitiesTable = () => {
 												<input
 													type="text"
 													placeholder="поиск..."
-													value={header.column.getFilterValue() as string}
+													value={
+														(header.column.getFilterValue() as string) ?? ''
+													}
 													onChange={(e) =>
 														header.column.setFilterValue(e.target.value)
 													}
