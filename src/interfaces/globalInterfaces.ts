@@ -3,6 +3,6 @@ export interface SingleCityDataI {
 	cityName: string;
 	cityType: string;
 	cityNameWithoutType: string;
-	cityPopulation: number;
+	cityPopulation: string;
 	cityRegion: string;
 }
